@@ -18,6 +18,7 @@ const createPlan = async (req, res, next) => {
         fname,
         lname,
         email,
+        areaCode,
         phoneNumber,
         gender,
         schedule,
@@ -31,6 +32,7 @@ const createPlan = async (req, res, next) => {
         fname,
         lname,
         email,
+        areaCode,
         phoneNumber,
         gender,
         schedule,
@@ -39,6 +41,7 @@ const createPlan = async (req, res, next) => {
         paymentId,
         paymentDate,
     });
+    console.log(createPlan);
 
     try{
         await createPlan.save();
