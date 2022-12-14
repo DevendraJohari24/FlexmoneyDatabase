@@ -7,9 +7,12 @@ const plansRoute = require('./routes/plan-route')
 
 const app = express();
 
+
 let port = process.env.PORT || 5000;
 
 app.use(bodyParser.json());
+
+app.options('*', cors());
 
 
 app.use('/api/plans', plansRoute)
