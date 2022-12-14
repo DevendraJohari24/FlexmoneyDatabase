@@ -19,6 +19,7 @@ router.post(
     check("areaCode").not().isEmpty(),
     check("phoneNumber").isLength({max: 10, min: 10}),
     check("gender").not().isEmpty(),
+    check("dob").not().isEmpty(),
     check("schedule").not().isEmpty(),
     check("level").not().isEmpty(),
     check("session").not().isEmpty(),

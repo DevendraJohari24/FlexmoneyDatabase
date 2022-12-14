@@ -6,6 +6,7 @@ const PlanSchema = new mongoose.Schema({
   areaCode: {type: String, required: true},
   phoneNumber: {type: String, required: true, unique: true},
   gender: { type: String, required: true },
+  dob:{type: String, required: true },
   schedule: { type: String, required: true },
   level: {type: String, required: true },
   session: { type: String, required: true },
